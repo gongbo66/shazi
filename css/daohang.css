@@ -1,0 +1,5 @@
+ul li{list-style: none;}
+#box{width: 1000px;height: 300px;margin:200px auto;position: absolute;top:-120px;left:400px;}
+#box div{width: 200px;height: 188px;float:left;margin-left: 40px;border-radius:15px;overflow: hidden;}
+.div button{width: 200px;height: 32px;background: #999;color:#fff;opacity:0.5;cursor: pointer;}
+.div input{width: 196px;height: 20px;text-align:center;display: none;opacity:0.5;cursor: pointer;color:#45817C;}

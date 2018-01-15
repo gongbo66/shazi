@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/lunbo.css">
+	<link rel="stylesheet" href="css/daohang.css">
+	<link rel="stylesheet" href="css/daojishhi.css">
+	<link rel="stylesheet" href="css/xzmu.css">
+	<link rel="stylesheet" href="css/sfq.css">
+	<link rel="stylesheet" href="css/dibu.css">
+	<style>
+		*{margin: 0px;padding: 0px;}
+		body{background: #999;width:100%;}
+	</style>
+</head>
+<body>
+<!-- *******************************************轮播图*************************************** -->
+	<div id="lbau"><img src="img/1.jpg" height="240" width="360" alt="" /></div>
+		<input type="button" value="《点我向左" / class="ipt1">
+		<input type="button" value="点我向右》" / class="ipt2">
+	<div class="box">
+		<button></button>
+		<button></button>
+		<button></button>
+		<button></button>
+	</div>
+	<script type="text/javascript" src=js/lunbo.js></script>
+
+	<div id="main"><img src="img/27.jpg" width="100" height="100" alt=""></div>
+	<script src="JQ/jquery-3.2.1.js"></script>
+	<script>
+		$(function(){
+			$(document).scroll(function(){
+				var h = $(document).scrollTop();
+				if(h>=100){
+					$('#main').css('top',h+'px')
+				}
+			});
+		});
+
+	</script>
+
+<!-- *******************************************导航*************************************** -->
+	<div class="box1" id="box">
+			<div class="div">	
+					<button>游戏资料</button>
+					<input type="text"	value="新手指引" readonly unselectable="on" >
+					<input type="text"	value="资料库" readonly unselectable="on">
+					<input type="text"	value="攻略中心" readonly unselectable="on">
+					<input type="text"	value="模式实验室" readonly unselectable="on">
+					<input type="text"	value="海克斯战利品库" readonly unselectable="on">
+					<input type="text"	value="屏保下载" readonly unselectable="on">
+				
+			</div>
+			<div class="div">		
+					<button>商城/合作</button>
+					<input type="text"	value="点券充值" readonly unselectable="on">
+					<input type="text"	value="道具城" readonly unselectable="on">
+					<input type="text"	value="周边商城" readonly unselectable="on">
+					<input type="text"	value="LOL桌游" readonly unselectable="on">
+					<input type="text"	value="LOL信用卡" readonly unselectable="on">
+					<input type="text"	value="网吧特权" readonly unselectable="on">
+					
+			</div>	
+			<div class="div">
+					<button>用户互动</button>
+					<input type="text"	value="在线客服" readonly unselectable="on">
+					<input type="text"	value="视频中心" readonly unselectable="on">
+					<input type="text"	value="官方论坛" readonly unselectable="on">
+					<input type="text"	value="官方微信" readonly unselectable="on">
+					<input type="text"	value="官方微博" readonly unselectable="on">
+					<input type="text"	value="网吧特权" readonly unselectable="on">
+					
+			</div>
+			<div class="div">
+					<button>赛事中心</button>
+					<input type="text"	value="全球总决赛" readonly unselectable="on">
+					<input type="text"	value="LPL职业联赛" readonly unselectable="on">
+					<input type="text"	value="德玛西亚杯" readonly unselectable="on">
+					<input type="text"	value="城市争霸赛" readonly unselectable="on">
+					<input type="text"	value="高校联赛" readonly unselectable="on"> 
+					<input type="text"	value="LDL发展联赛" readonly unselectable="on">
+								
+			</div>
+		</div>
+		<script src="JQ/jquery-3.2.1.js"></script>
+		<script>
+				var au = $(".div>button"); //获取按钮
+				var ipt = $("div>input"); //获取input框
+
+					//给所有按钮添加事件
+					au.click(function(){
+						ipt.css("display","none");
+						//让当前点击的那个btn的所有兄弟显示
+						$(this).nextAll().css("display","block")
+					})
+						//鼠标双击按钮隐藏下面的input
+					au.dblclick(function(){
+						ipt.css("display","none");
+					})
+		</script>
+
+<!-- *******************************************倒计时*************************************** -->
+		<div id="box1">
+			<p>距离英雄联盟LPL职业联赛倒计时</p>
+			<input type="text" value="" / class="djs" readonly unselectable="on">天
+       	 	<input type="text" value="" / class="djs" readonly unselectable="on">时
+       	 	<input type="text" value="" / class="djs" readonly unselectable="on">分
+        	<input type="text" value="" / class="djs" readonly unselectable="on">秒
+		</div>
+		<script type="text/javascript" src="js/daojishi.js"></script>
+
+<!-- ******************************************旋转木马*************************************** -->
+		<div class="wrap" id="wrap">
+			<h3>英雄,去超越！</h3>
+  			 <div class="slide" id="slide">
+       			<ul>
+         			<li><a href="#"><img src="img/15.jpg" alt=""/></a></li>
+          			<li><a href="#"><img src="img/16.jpg" alt=""/></a></li>
+          			<li><a href="#"><img src="img/17.jpg" alt=""/></a></li>
+          			<li><a href="#"><img src="img/18.jpg" alt=""/></a></li>
+          			<li><a href="#"><img src="img/19.jpg" alt=""/></a></li>
+       			</ul>
+      		 		<div class="arrow" id="arrow">
+          				<a href="javascript:;" class="prev"></a>
+          				<a href="javascript:;" class="next"></a>
+       				</div>
+   			</div>
+		</div>
+		<script type="text/javascript" src="js/animate.js"></script>
+		<script src="js/xzmu.js"></script>
+			<h3>英雄,无所畏惧！</h3>
+			
+<!-- ******************************************手风琴*************************************** -->
+		<div id="box2">
+			<ul>
+				<li><h2>虚空行者</h2><h5>为你微不足道的誓言驰骋</h5><img src="img/5.jpg" alt=""></li>									
+				<li><h2>黑暗之女</h2><h5>你也要来玩儿么</h5><img src="img/6.jpg" alt=""></li>
+				<li><h2>无双剑姬</h2><h5>锐利的剑 锐利的眼我是一位拿着剑的艺术家</h5><img src="img/7.jpg" alt=""></li>
+				<li><h2>蒙多医生</h2><h5>蒙多想去哪就去哪</h5><img src="img/8.jpg" alt=""></li>
+				<li><h2>德邦总管</h2><h5>即使敌众我寡 末将也能万军从中 取敌将首级</h5><img src="img/9.jpg" alt=""></li>
+			</ul>
+		</div>
+		<script src="js/sfq.js"></script>
+
+<!-- ******************************************底部*************************************** -->
+		<div id="box3">
+			<img src="imgs/27.jpg" height="100px" width="100%" alt="">	
+			<p class="p1">腾讯互动娱乐|服务条款|广告服务|腾讯游戏招聘|腾讯游戏客服|游戏活动|游戏地图|商务合作|腾讯网|网站导航</p>
+			<p class="p2">COPYRIGHT © 1998 - 2017 TENCENT. ALL RIGHTS RESERVED.</p>
+			<p class="p3">© 2012 Riot Games, Inc. ALL RIGHTS RESERVED.</p>
+		</div>	
+</body>
+</html>

@@ -1,0 +1,7 @@
+#box2{width: 1200px;height: 500px;margin: 50px auto;overflow: hidden;margin-top: 40px;}
+#box2 ul{width: 1500px;}
+#box2 ul li{width: 300px;height: 500px;float:left;position: relative;}
+#box2 img{width: 770px;height: 500px;}
+#box2 h2{position: absolute;right: 14px;top: 10px;font-size:20px;width:10px;}	
+#box2 h5{position: absolute;right: 12px;top: 150px;float: right;width:10px;}	
+h3{font-size: 23px;text-align: center;margin-top: 160px;}
